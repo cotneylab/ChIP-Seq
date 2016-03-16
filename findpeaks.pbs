@@ -1,0 +1,112 @@
+#PBS -m abe
+#PBS -M cotney@uchc.edu
+#PBS -V
+#PBS -N find_peaks_mouse
+#PBS -l nodes=1:ppn=1
+source /home/CAM/jcotney/.bashrc
+cd /home/CAM/jcotney/ANALYSIS/ChIP/no_norm/Human/homer
+findPeaks GSM1039546_E33_rep1_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039522_E33_rep1_input_300_uniq
+findPeaks GSM1039547_E33_rep2_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039523_E33_rep2_input_300_uniq
+findPeaks GSM1039548_E41_rep1_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039524_E41_rep1_input_300_uniq
+findPeaks GSM1039549_E41_rep2_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039525_E41_rep2_input_300_uniq
+findPeaks GSM1039550_E44_rep1_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039526_E44_rep1_input_300_uniq
+findPeaks GSM1039551_E44_rep2_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039527_E44_rep2_input_300_uniq
+findPeaks GSM1039552_E47_rep1_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039528_E47_rep1_input_300_uniq
+findPeaks GSM1039553_E47_rep2_h3k27ac_300_uniq -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i GSM1039529_E47_rep2_input_300_uniq
+findPeaks JCOT_121_012_F2_Face_H3K27AC -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_121_006_F2_Face_Input
+findPeaks JCOT_245_004_HEPM_1_SMC1a -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_246_005_HEPM_2_SMC1a -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_247_006_HEPM_3_SMC1a -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_253_006_HEPM_1_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_254_007_HEPM_2_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_255_012_HEPM_3_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_261_012_HEPM_1_H3K4me2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_262_001_HEPM_2_H3K4me2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_263_003_HEPM_3_H3K4me2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_264_001_12191_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_267_004_12191_Input
+findPeaks JCOT_265_002_12191_H3K4me2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_267_004_12191_Input
+findPeaks JCOT_266_003_12191_Smc1a -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_267_004_12191_Input
+findPeaks JCOT_268_005_12104_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_271_008_12104_Input
+findPeaks JCOT_269_006_12104_H3K4me2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_271_008_12104_Input
+findPeaks JCOT_270_007_12104_Smc1a -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i JCOT_271_008_12104_Input
+findPeaks JCOT_245_004_HEPM_1_SMC1a -o auto -style factor -fragLength 300 -inputFragLength 300  -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_246_005_HEPM_2_SMC1a -o auto -style factor -fragLength 300 -inputFragLength 300  -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_247_006_HEPM_3_SMC1a -o auto -style factor -fragLength 300 -inputFragLength 300  -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_266_003_12191_Smc1a -o auto -style factor -fragLength 300 -inputFragLength 300  -i JCOT_267_004_12191_Input
+findPeaks JCOT_270_007_12104_Smc1a -o auto -style factor -fragLength 300 -inputFragLength 300  -i JCOT_271_008_12104_Input
+findPeaks SRR191355_human_hNCC_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR191353_human_hNCC_Input
+findPeaks SRR2096394_H9_ESC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096395_H9_ESC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096396_H9_ESC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096397_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096398_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096399_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096400_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096401_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096402_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096403_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096404_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096413_H9_ESC_derived_CNCCs_H3K4me1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096414_WT33_iPSC_derived_CNCCs_H3K4me1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096417_H9_ESC_derived_CNCCs_H3K4me3 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096418_ADRC40_iPSC_derived_CNCCs_H3K4me3 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096419_WT33_iPSC_derived_CNCCs_H3K4me3 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096422_H9_ESC_derived_CNCCs_H3K27me3 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks GSM1039546_E33_rep1_h3k27ac_300_uniq -o auto -style super -i GSM1039522_E33_rep1_input_300_uniq
+findPeaks GSM1039547_E33_rep2_h3k27ac_300_uniq -o auto -style super -i GSM1039523_E33_rep2_input_300_uniq
+findPeaks GSM1039548_E41_rep1_h3k27ac_300_uniq -o auto -style super -i GSM1039524_E41_rep1_input_300_uniq
+findPeaks GSM1039549_E41_rep2_h3k27ac_300_uniq -o auto -style super -i GSM1039525_E41_rep2_input_300_uniq
+findPeaks GSM1039550_E44_rep1_h3k27ac_300_uniq -o auto -style super -i GSM1039526_E44_rep1_input_300_uniq
+findPeaks GSM1039551_E44_rep2_h3k27ac_300_uniq -o auto -style super -i GSM1039527_E44_rep2_input_300_uniq
+findPeaks GSM1039552_E47_rep1_h3k27ac_300_uniq -o auto -style super -i GSM1039528_E47_rep1_input_300_uniq
+findPeaks GSM1039553_E47_rep2_h3k27ac_300_uniq -o auto -style super -i GSM1039529_E47_rep2_input_300_uniq
+findPeaks JCOT_121_012_F2_Face_H3K27AC -o auto -style super -i JCOT_121_006_F2_Face_Input
+findPeaks JCOT_253_006_HEPM_1_H3K27ac -o auto -style super -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_254_007_HEPM_2_H3K27ac -o auto -style super -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_255_012_HEPM_3_H3K27ac -o auto -style super -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_261_012_HEPM_1_H3K4me2 -o auto -style super -i JCOT_237_012_HEPM_1_input
+findPeaks JCOT_262_001_HEPM_2_H3K4me2 -o auto -style super -i JCOT_238_002_HEPM_2_input
+findPeaks JCOT_263_003_HEPM_3_H3K4me2 -o auto -style super -i JCOT_239_004_HEPM_3_input
+findPeaks JCOT_264_001_12191_H3K27ac -o auto -style super -i JCOT_267_004_12191_Input
+findPeaks JCOT_265_002_12191_H3K4me2 -o auto -style super -i JCOT_267_004_12191_Input
+findPeaks JCOT_268_005_12104_H3K27ac -o auto -style super -i JCOT_271_008_12104_Input
+findPeaks JCOT_269_006_12104_H3K4me2 -o auto -style super -i JCOT_271_008_12104_Input
+findPeaks SRR2096394_H9_ESC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096395_H9_ESC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096396_H9_ESC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096397_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096398_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096399_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096400_ADRC40_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096401_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096402_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096403_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096404_WT33_iPSC_derived_CNCCs_H3K27ac -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096413_H9_ESC_derived_CNCCs_H3K4me1 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096414_WT33_iPSC_derived_CNCCs_H3K4me1 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096417_H9_ESC_derived_CNCCs_H3K4me3 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096418_ADRC40_iPSC_derived_CNCCs_H3K4me3 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096419_WT33_iPSC_derived_CNCCs_H3K4me3 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks SRR2096422_H9_ESC_derived_CNCCs_H3K27me3 -o auto -style super -i SRR2096456_H9_ESC_derived_CNCCs_Input
+findPeaks CS15_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i CS15_IN_rep1
+findPeaks CS16_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i CS16_IN_rep1
+findPeaks CS16_ac_rep2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i CS16_IN_rep2
+findPeaks CS23_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i CS23_IN_rep1
+findPeaks CS23_ac_rep2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i CS23_IN_rep2
+findPeaks F1F_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F1F_IN_rep1
+findPeaks F1O_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F1O_IN_rep1
+findPeaks F2F_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F2F_IN_rep1
+findPeaks F2F_ac_rep2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F2F_IN_rep2
+findPeaks F2O_ac_rep1 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F2O_IN_rep1
+findPeaks F2O_ac_rep2 -o auto -L 0 -region -size 500 -minDist 1000 -style histone -fragLength 300 -inputFragLength 300  -i F2O_IN_rep2
+findPeaks CS15_ac_rep1 -o auto -style super -i CS15_IN_rep1
+findPeaks CS16_ac_rep1 -o auto -style super -i CS16_IN_rep1
+findPeaks CS16_ac_rep2 -o auto -style super -i CS16_IN_rep2
+findPeaks CS23_ac_rep1 -o auto -style super -i CS23_IN_rep1
+findPeaks CS23_ac_rep2 -o auto -style super -i CS23_IN_rep2
+findPeaks F1F_ac_rep1 -o auto -style super -i F1F_IN_rep1
+findPeaks F1O_ac_rep1 -o auto -style super -i F1O_IN_rep1
+findPeaks F2F_ac_rep1 -o auto -style super -i F2F_IN_rep1
+findPeaks F2F_ac_rep2 -o auto -style super -i F2F_IN_rep2
+findPeaks F2O_ac_rep1 -o auto -style super -i F2O_IN_rep1
+findPeaks F2O_ac_rep2 -o auto -style super -i F2O_IN_rep2
