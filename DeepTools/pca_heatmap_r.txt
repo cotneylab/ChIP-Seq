@@ -1,0 +1,94 @@
+datasets = as.data.frame(scan("metadata.txt",list(epigenomeID="",sampleID="",color="",name="",group="",age="",anatomy="",type="",solid_liquid="",singledonor_composite=""),sep="\t"))
+rawCounts <- read.delim("bigWigsummary_all_samples_H3K27ac_enhancers_scores.R.txt", header= TRUE)
+rownames(rawCounts) <- rawCounts$regionID
+rawCounts <- rawCounts[,-1]
+countdata = as.matrix(as.data.frame(lapply(rawCounts,as.numeric)))
+colnames(countdata) <- c("craniofacial_12383", "craniofacial_12690", "craniofacial_12829", "craniofacial_12830", "craniofacial_12877", "craniofacial_combined_CS13", "craniofacial_12408", "craniofacial_12709", "craniofacial_12913", "craniofacial_combined_CS14", "craniofacial_13000", "craniofacial_13019", "craniofacial_13128", "craniofacial_combined_CS15", "craniofacial_12331", "craniofacial_12341", "craniofacial_12611", "craniofacial_combined_CS17", "craniofacial_12104", "ESC.I3", "ESC.WA7", "ESC.H1", "ESDR.H1.BMP4.MESO", "ESDR.H1.BMP4.TROP", "ESDR.H1.MSC", "ESDR.H1.NEUR.PROG", "ESC.H9", "ESDR.H9.NEUR.PROG", "ESDR.H9.NEUR", "ESDR.CD184.ENDO", "ESDR.CD56.ECTO", "ESDR.CD56.MESO", "ESC.HUES48", "ESC.HUES6", "ESC.HUES64", "LNG.IMR90", "IPSC.15b", "IPSC.18", "IPSC.20B", "IPSC.DF.6.9", "IPSC.DF.19.11", "FAT.MSC.DR.ADIP", "ESC.4STAR", "FAT.ADIP.DR.MSC", "STRM.MRW.MSC", "BRST.MYO", "BRST.HMEC.35", "BLD.CD14.PC", "BLD.CD15.PC", "BLD.CD19.CPC", "BLD.CD19.PPC", "BLD.CD3.CPC", "BLD.CD3.PPC", "BLD.CD34.PC", "BLD.CD34.CC", "BLD.CD4.MPC", "BLD.CD4.NPC", "BLD.CD4.CD25M.CD45RA.NPC", "BLD.CD4.CD25M.CD45RO.MPC", "BLD.CD4.CD25M.IL17M.PL.TPC", "BLD.CD4.CD25M.IL17P.PL.TPC", "BLD.CD4.CD25M.TPC", "BLD.CD4.CD25.CD127M.TREGPC", "BLD.CD4.CD25I.CD127.TMEMPC", "BLD.CD56.PC", "BLD.CD8.NPC", "BLD.CD8.MPC", "STRM.CHON.MRW.DR.MSC", "BLD.MOB.CD34.PC.F", "BLD.MOB.CD34.PC.M", "MUS.SAT", "BRN.CRTX.DR.NRSPHR", "BRN.GANGEM.DR.NRSPHR", "SKIN.PEN.FRSK.FIB.01", "SKIN.PEN.FRSK.FIB.02", "SKIN.PEN.FRSK.KER.02", "SKIN.PEN.FRSK.KER.03", "SKIN.PEN.FRSK.MEL.01", "SKIN.PEN.FRSK.MEL.03", "BLD.PER.MONUC.PC", "FAT.ADIP.NUC", "VAS.AOR", "LIV.ADLT", "BRN.ANG.GYR", "BRN.ANT.CAUD", "BRN.CING.GYR", "BRN.GRM.MTRX", "BRN.HIPP.MID", "BRN.INF.TMP", "BRN.DL.PRFRNTL.CRTX", "BRN.SUB.NIG", "GI.CLN.MUC", "GI.CLN.SM.MUS", "GI.DUO.MUC", "GI.DUO.SM.MUS", "GI.ESO", "ADRL.GLND.FET", "BRN.FET.M", "BRN.FET.F", "HRT.FET", "GI.L.INT.FET", "GI.S.INT.FET", "KID.FET", "PANC.ISLT", "LNG.FET", "MUS.TRNK.FET", "MUS.LEG.FET", "PLCNT.FET", "GI.STMC.FET", "THYM.FET", "GI.STMC.GAST", "HRT.VENT.L", "LNG", "OVRY", "PANC", "PLCNT.AMN", "MUS.PSOAS", "GI.RECT.MUC.29", "GI.RECT.MUC.31", "GI.RECT.SM.MUS", "HRT.ATR.R", "HRT.VNT.R", "GI.CLN.SIG", "MUS.SKLT.M", "MUS.SKLT.F", "GI.S.INT", "GI.STMC.MUC", "GI.STMC.MUS", "THYM", "SPLN", "LNG.A549.ETOH002.CNCR", "BLD.DND41.CNCR", "BLD.GM12878", "CRVX.HELAS3.CNCR", "LIV.HEPG2.CNCR", "BRST.HMEC", "MUS.HSMM", "MUS.HSMMT", "VAS.HUVEC", "BLD.K562.CNCR", "BLD.CD14.MONO", "BRN.NHA", "SKIN.NHDFAD", "SKIN.NHEK", "LNG.NHLF", "BONE.OSTEO")
+library(pheatmap)
+#make heatmaps
+pheatmap(cor(countdata),fontsize_col=.01,fontsize_row=.5)
+pheatmap(cor(countdata),clustering_method="average",fontsize_col=.01,fontsize_row=6)
+pheatmap(cor(countdata),clustering_method="single",fontsize_col=.01,fontsize_row=6)
+pheatmap(cor(countdata),clustering_distance_rows="manhattan",clustering_distance_cols="manhattan",fontsize_col=.01,fontsize_row=6)
+pheatmap(cor(countdata),clustering_distance_rows="canberra",clustering_distance_cols="canberra",fontsize_col=.01,fontsize_row=6)
+pheatmap(cor(countdata, method="spearman"),fontsize_col=.01,fontsize_row=6)
+library(ggplot2)
+#make pca
+#have to transpose matrix for this to work
+transposed_counts <- t(countdata)
+pca_proc <- prcomp(transposed_counts)
+summary(pca_proc)
+plotData = datasets[,c("name","sampleID","age","anatomy","group","type")]
+plotData$PC1 <- pca_proc$x[,1]
+plotData$PC2 <- pca_proc$x[,2]
+plotData$PC3 <- pca_proc$x[,3]
+plotData$PC4 <- pca_proc$x[,4]
+plotData$PC5 <- pca_proc$x[,5]
+plotData$PC6 <- pca_proc$x[,6]
+qplot(PC1,PC2,data=plotData,color=group,xlab="PC1 34.7% of Variance",ylab="PC2 21.9% of variance", label = plotData$name) + geom_text(size=2, nudge_x=100, nudge_y=20)
+qplot(PC3,PC2,data=plotData,color=group,xlab="PC3 8.5% of Variance",ylab="PC2 21.9% of variance", label = plotData$name) + geom_text(size=2, nudge_x=50, nudge_y=20)
+qplot(PC3,PC4,data=plotData,color=group,xlab="PC3 8.5% of Variance",ylab="PC4 5.4% of variance", label = plotData$name) + geom_text(size=2, nudge_x=50, nudge_y=20)
+par3d(windowRect = c(50, 50, 1200, 1200))
+plot3d(plotData[,7:9], col=as.numeric(plotData$group), size = .5, type = "s")
+text3d(plotData[,7:9], texts=plotData$name, cex=0.4, adj = 1)
+legend3d("topright", legend = paste(c("Adipose", "Blood_T_cell", "Brain", "Craniofacial", "Digestive", "ENCODE2012", "Epithelial", "ES_deriv", "ESC", "Heart", "HSC_B_cell", "IMR90", "iPSC", "Mesench", "Muscle", "Myosat", "Neurosph", "Other", "S._Muscle", "Sm_Muscle", "Sm._Muscle", "Thymus")), pch = 16, col = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"), cex=1, inset=c(0.02))
+browseURL(paste("file://", writeWebGL(dir="webGL_PCA", width=1200, font = "Helvetica"), sep=""))
+
+
+
+#normalize_matrix
+H3K27ac_matrix<-countdata
+H3K27ac_matrix_norm<-countdata
+for (i in 1:dim(H3K27ac_matrix_norm)[1]) {
+    H3K27ac_matrix_norm[i,]<-(H3K27ac_matrix[i,]-mean(H3K27ac_matrix[i,]))/sd(H3K27ac_matrix[i,])
+}
+
+
+library(flexclust)
+
+distJaccard <- function(x, centers)
+{
+nx <- nrow(x)
+nc <- nrow(c)
+xc <- x * t (centers)
+denominator <- matrix(rowSums(x), nrow=nx , ncol=nc) + matrix(rowSums(centers), nrow=nx, ncol=nc, byrow=TRUE) - xc
+return(1 - xc/denominator)
+}
+
+centOptim01 <- function(x, dist)
+{
+foo <- function(p)
+sum(dist(x, matrix(p, nrow =1)))
+optim(colMeans(x), foo, lower=0, upper=1, method = c("L-BFGS-B"))
+}
+
+jaccFam <- kccaFamily(dist=distJaccard,cent=centOptim01)
+ejacFam <- kccaFamily(dist=distJaccard,cent=colMeans)
+
+h3k27ac.cl <- kcca(H3K27ac_matrix,k=212,family=jaccFam)
+
+
+
+
+
+
+
+denominator <- matrix(rowSums(H3K27ac_matrix), nrow=nrow(H3K27ac_matrix), ncol=ncol(H3K27ac_matrix)) + matrix(rowSums(6), nrow=nrow(H3K27ac_matrix), ncol=ncol(H3K27ac_matrix), byrow=TRUE) - xc
+
+
+
+#determine number of clusters for k-means
+scree <- (nrow(H3K27ac_matrix_norm)-1)*sum(apply(H3K27ac_matrix_norm,2,var))
+  for (i in 2:50) {
+    scree[i] <- sum(kmeans(H3K27ac_matrix_norm,centers=i,iter.max=100,nstar=10)$withinss)
+} 
+plot(1:50, scree, type="b", xlab="Number of Clusters",ylab="Within groups sum of squares")
+
+
+cluster <- kmeans(countdata,k.best)
+aggregate(countdata,by=list(cluster$cluster),FUN=mean)
+cluster_countdata <- data.frame(countdata, clusterid=cluster$cluster)
+
+
+cluster <- kmeans(H3K27ac_matrix_norm,centers=233,iter.max=100,nstart=10)
+H3K27ac_matrix<-cbind(H3K27ac_matrix_norm,cluster$cluster)
