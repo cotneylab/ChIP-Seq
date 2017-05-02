@@ -1,0 +1,10 @@
+#PBS -m abe
+#PBS -M cotney@uchc.edu
+#PBS -N LearnModel
+#PBS -V
+#PBS -l mem=32G
+source /home/FCAM/jcotney/.bashrc
+cd /home/FCAM/jcotney/ANALYSIS/ChIP/ChromHMM
+java -mx32000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar MakeSegmentation /home/FCAM/jcotney/DATA/ChromHMM_15State/model_15_coreMarks.txt  OUTPUTDATA_HUMAN_CRANIOFACIAL/5mark CHROMHMM_HUMAN_CRANIOFACIAL/15State_joint
+java -mx32000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar MakeSegmentation /home/FCAM/jcotney/DATA/ChromHMM_18State/model_18_core_K27ac.txt  OUTPUTDATA_HUMAN_CRANIOFACIAL/6mark CHROMHMM_HUMAN_CRANIOFACIAL/18State_joint
+java -mx32000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar MakeSegmentation /home/FCAM/jcotney/DATA/ChromHMM_25State/model_25_imputed12marks.txt  OUTPUTDATA_HUMAN_CRANIOFACIAL/12mark CHROMHMM_HUMAN_CRANIOFACIAL/25State_joint

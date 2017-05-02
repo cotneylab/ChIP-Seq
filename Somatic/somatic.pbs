@@ -1,0 +1,18 @@
+#PBS -m abe
+#PBS -M cotney@uchc.edu
+#PBS -l nodes=1:ppn=1
+#PBS -V
+#PBS -N SOMatic
+source ~/.bashrc
+cd /home/FCAM/jcotney/ANALYSIS/ChIP/cross_tissue_comparisons/SOM/scripts
+./buildsite.sh -SOMName Craniofacial_H3K27ac_SOM -Matrix ../matrix_for_som.txt -Rows 50 -Cols 50 -SampleList ../sample.list -Timesteps 10000000 -Trials 50 -Sparse 1
+./getgenes.sh -SOMName Craniofacial_H3K27ac_SOM -Rows 50 -Cols 50 -GTFFile ../Homo_sapiens.GRCh37.75.chr.gtf
+./getGOGenomic.sh -SOMName Craniofacial_H3K27ac_SOM -Rows 50 -Cols 50 -Gene2GO ../ensembl2go.hpo -GeneInfo ../Homo_sapiens.ensembl75.gene_info -GOFile ../go.hpo.obo
+./getclusters.sh -SOMName Craniofacial_H3K27ac_SOM
+./getDimensionality.sh -SOMName Craniofacial_H3K27ac_SOM -CutLevel 40
+dimension=$(echo `head -n1 /home/FCAM/jcotney/ANALYSIS/ChIP/cross_tissue_comparisons/SOM/Craniofacial_H3K27ac_SOM/data/cutree.txt | cut -f2`)
+./metaClusterSOM.sh -SOMName Craniofacial_H3K27ac_SOM -Rows 50 -Cols 50 -Metaclusters 10 -MetaclustersEnd 212 -Sparse 1 -Dimensionality $dimension -Trials 4
+clusters=$(echo `head -n1 /home/FCAM/jcotney/ANALYSIS/ChIP/cross_tissue_comparisons/SOM/Craniofacial_H3K27ac_SOM/data/MetaClusters | cut -d ' ' -f4`)
+./metaClusterGene.sh -SOMName Craniofacial_H3K27ac_SOM -Rows 50 -Cols 50 -Metaclusters $clusters
+./generateMetaclusterReports.sh -SOMName Craniofacial_H3K27ac_SOM -Rows 50 -Cols 50 -Metaclusters $clusters -TrainingMatrix ../matrix_for_som.txt -OutputPrefix metaclusterreport
+

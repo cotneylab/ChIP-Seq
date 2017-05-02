@@ -1,0 +1,1 @@
+ls *segments.bed | sed 's/_segments.bed//g' | awk '{print "java -mx8000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar MakeBrowserFiles -c /home/FCAM/jcotney/DATA/ChromHMM_25State/colormap_25_imputed.tab -m /home/FCAM/jcotney/DATA/ChromHMM_25State/labelmap_25_imputed.tab "$1"_segments.bed "$1"state "$1"state"}'

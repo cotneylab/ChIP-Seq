@@ -1,0 +1,7 @@
+#PBS -m abe
+#PBS -M cotney@uchc.edu
+#PBS -V
+#PBS -l nodes=1:ppn=1
+source ~/.bashrc
+cd $PBS_O_WORKDIR
+wget --reject-regex=index.html -nH -r http://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/

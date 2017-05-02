@@ -1,0 +1,9 @@
+#PBS -N binarizecraniofacial
+#PBS -V
+#PBS -l mem=8G
+#PBS -l nodes=1:ppn=1
+source /home/FCAM/jcotney/.bashrc
+cd /home/FCAM/jcotney/ANALYSIS/ChIP/ChromHMM
+java -mx8000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar BinarizeSignal -g 2 INPUTSIGNALFILES_HUMAN_CRANIOFACIAL/5mark OUTPUTDATA_HUMAN_CRANIOFACIAL/5mark
+java -mx8000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar BinarizeSignal -g 2 INPUTSIGNALFILES_HUMAN_CRANIOFACIAL/6mark OUTPUTDATA_HUMAN_CRANIOFACIAL/6mark
+java -mx8000M -jar /home/FCAM/jcotney/TOOLS/ChromHMM/ChromHMM.jar BinarizeSignal -g 2 INPUTSIGNALFILES_HUMAN_CRANIOFACIAL/12mark OUTPUTDATA_HUMAN_CRANIOFACIAL/12mark

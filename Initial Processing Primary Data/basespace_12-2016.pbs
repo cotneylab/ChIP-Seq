@@ -1,0 +1,11 @@
+#PBS -M cotney@uchc.edu
+#PBS -m e
+#PBS -V
+#PBS -N basespace_craniofacial
+cd /home/FCAM/jcotney/DATA/ChIP/HUMAN_CRANIOFACIAL/BASESPACE
+module load basemount
+mkdir -p /tmp/jcotney/Basespace_CF/
+basemount /tmp/jcotney/Basespace_CF/
+cp -r /tmp/jcotney/Basespace_CF/Projects/Human_Craniofacial_ChIP_12-2016/Samples/JCOT* .
+basemount --unmount /tmp/jcotney/Basespace_CF/
+rm -r /tmp/jcotney/Basespace_CF/

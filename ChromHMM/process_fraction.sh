@@ -1,0 +1,2 @@
+ls *.enhancer_states.bed | sed 's/_25_imputed12marks_dense.enhancer_states.bed//g' | awk '{print "cut -f1-3 "$1"_25_imputed12marks_dense.enhancer_states.bed |intersectBed -wao -a hg19_200Kb_windows.bed -b stdin | bedtools groupby -i stdin -g 1,2,3 -c 7 -o sum | awk \x27\x7Bprint \x24"0"\x22\x5Ct\x22\x24"3"-\x24"2"\x22\x5Ct\x22\x24"4"\x2F(\x24"3"-\x24"2")\x7D\x27 > "$1"_fraction_windows_enhancer_state.txt"}'
+
