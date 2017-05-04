@@ -1,0 +1,3 @@
+intersectBed -wao -a enriched_windows_merged.bed -b enriched_windows.txt | bedtools groupby -i stdin -g 1,2,3 -c 9 -o mean | sort -k4,4nr > enriched_windows_sorted_avg_enrichment.txt
+intersectBed -wa -u -a ~/GENOME/hg19/annotation/gencode.v19.annotation.promoter.bed -b enriched_windows_sorted_position.bed | sed 's/|/\t/g' | cut -f4 | sort -k1,1 | uniq - > enriched_windows_genes.txt
+intersectBed -v -b ~/GENOME/hg19/annotation/gencode.v19.annotation.filtered.known.protein_coding.gtf -a enriched_windows_sorted_position.bed > enriched_windows_only_intergenic.bed

@@ -1,0 +1,128 @@
+EID	GROUP	COLOR	MNEMONIC	STD_NAME	EDACC_NAME	ANATOMY	TYPE	AGE	SEX	SOLID_LIQUID	ETHNICITY	SINGLEDONOR_COMPOSITE
+E001	ESC	#924965	ESC.I3	ES_I3_Cells	ES_I3_Cell_Line	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E002	ESC	#924965	ESC.WA7	ES_WA7_Cells	ES_WA7_Cell_Line	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E003	ESC	#924965	ESC.H1	H1_Cells	H1_Cell_Line	ESC	PrimaryCulture	CL	Male	NA	NA	SD
+E004	ES_deriv	#4178AE	ESDR.H1.BMP4.MESO	H1_BMP4_Derived_Mesendoderm_Cultured_Cells	H1_BMP4_Derived_Mesendoderm_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E005	ES_deriv	#4178AE	ESDR.H1.BMP4.TROP	H1_BMP4_Derived_Trophoblast_Cultured_Cells	H1_BMP4_Derived_Trophoblast_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E006	ES_deriv	#4178AE	ESDR.H1.MSC	H1_Derived_Mesenchymal_Stem_Cells	H1_Derived_Mesenchymal_Stem_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E007	ES_deriv	#4178AE	ESDR.H1.NEUR.PROG	H1_Derived_Neuronal_Progenitor_Cultured_Cells	H1_Derived_Neuronal_Progenitor_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E008	ESC	#924965	ESC.H9	H9_Cells	H9_Cell_Line	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E009	ES_deriv	#4178AE	ESDR.H9.NEUR.PROG	H9_Derived_Neuronal_Progenitor_Cultured_Cells	H9_Derived_Neuronal_Progenitor_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Female	NA	NA	SD
+E010	ES_deriv	#4178AE	ESDR.H9.NEUR	H9_Derived_Neuron_Cultured_Cells	H9_Derived_Neuron_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Female	NA	NA	SD
+E011	ES_deriv	#4178AE	ESDR.CD184.ENDO	hESC_Derived_CD184Positive_Endoderm_Cultured_Cells	hESC_Derived_CD184Positive_Endoderm_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E012	ES_deriv	#4178AE	ESDR.CD56.ECTO	hESC_Derived_CD56Positive_Ectoderm_Cultured_Cells	hESC_Derived_CD56Positive_Ectoderm_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E013	ES_deriv	#4178AE	ESDR.CD56.MESO	hESC_Derived_CD56Positive_Mesoderm_Cultured_Cells	hESC_Derived_CD56Positive_Mesoderm_Cultured_Cells	ESC_DERIVED	ESCDerived	CL	Male	NA	NA	SD
+E014	ESC	#924965	ESC.HUES48	HUES48_Cells	HUES48_Cell_Line	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E015	ESC	#924965	ESC.HUES6	HUES6_Cells	HUES6_Cell_Line	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E016	ESC	#924965	ESC.HUES64	HUES64_Cells	HUES64_Cell_Line	ESC	PrimaryCulture	CL	Male	NA	NA	SD
+E017	IMR90	#E41A1C	LNG.IMR90	IMR90_fetal_lung_fibroblasts_Cell_Line	IMR90_Cell_Line	LUNG	CellLine	CL	Female	NA	NA	SD
+E018	iPSC	#69608A	IPSC.15b	iPS_15b_Cells	iPS_15b_Cell_Line	IPSC	PrimaryCulture	CL	Female	NA	NA	SD
+E019	iPSC	#69608A	IPSC.18	iPS_18_Cells	iPS_18_Cell_Line	IPSC	PrimaryCulture	CL	Female	NA	NA	SD
+E020	iPSC	#69608A	IPSC.20B	iPS_20b_Cells	iPS_20b_Cell_Line	IPSC	PrimaryCulture	CL	Male	NA	NA	SD
+E021	iPSC	#69608A	IPSC.DF.6.9	iPS_DF_6.9_Cells	iPS_DF_6.9_Cell_Line	IPSC	PrimaryCulture	CL	Male	NA	NA	SD
+E022	iPSC	#69608A	IPSC.DF.19.11	iPS_DF_19.11_Cells	iPS_DF_19.11_Cell_Line	IPSC	PrimaryCulture	CL	Male	NA	NA	SD
+E023	Mesench	#B65C73	FAT.MSC.DR.ADIP	Mesenchymal_Stem_Cell_Derived_Adipocyte_Cultured_Cells	Mesenchymal_Stem_Cell_Derived_Adipocyte_Cultured_Cells	FAT	PrimaryCulture	CL	Female	NA	NA	SD
+E024	ESC	#924965	ESC.4STAR	ES_UCSF4_Cells	4star	ESC	PrimaryCulture	CL	Female	NA	NA	SD
+E025	Mesench	#B65C73	FAT.ADIP.DR.MSC	Adipose_Derived_Mesenchymal_Stem_Cell_Cultured_Cells	Adipose_Derived_Mesenchymal_Stem_Cell_Cultured_Cells	FAT	PrimaryCulture	31Y_59Y_41Y	Female	SOLID	Unknown	C
+E026	Mesench	#B65C73	STRM.MRW.MSC	Bone_Marrow_Derived_Cultured_Mesenchymal_Stem_Cells	Bone_Marrow_Derived_Mesenchymal_Stem_Cell_Cultured_Cells	STROMAL_CONNECTIVE	PrimaryCulture	57Y_unknown_unkown_unkown	Unknown	SOLID	Unknown	SD
+E027	Epithelial	#FF9D0C	BRST.MYO	Breast_Myoepithelial_Primary_Cells	Breast_Myoepithelial_Cells	BREAST	PrimaryCell	36Y_33Y	Female	SOLID	African_American_African_American	C
+E028	Epithelial	#FF9D0C	BRST.HMEC.35	Breast_variant_Human_Mammary_Epithelial_Cells_(vHMEC)	Breast_vHMEC	BREAST	PrimaryCulture	18Y	Female	SOLID	Caucasian	SD
+E029	HSC_B_cell	#678C69	BLD.CD14.PC	Primary_monocytes_from peripheral blood	CD14_Primary_Cells	BLOOD	PrimaryCell	21Y_37Y	Male	LIQUID	Hispanic_Unknown	C
+E030	HSC_B_cell	#678C69	BLD.CD15.PC	Primary_neutrophils_from peripheral blood	CD15_Primary_Cells	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Male	LIQUID	Unknown	SD
+E031	HSC_B_cell	#678C69	BLD.CD19.CPC	Primary_B_cells_from_cord_blood	CD19_Primary_Cells_Cord_BI	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Mixed	LIQUID	Unknown	C
+E032	HSC_B_cell	#678C69	BLD.CD19.PPC	Primary_B_cells_from_peripheral_blood	CD19_Primary_Cells_Peripheral_UW	BLOOD	PrimaryCell	21Y_37Y	Male	LIQUID	Caucasian_Hispanic	C
+E033	Blood_T_cell	#55A354	BLD.CD3.CPC	Primary_T_cells_from_cord_blood	CD3_Primary_Cells_Cord_BI	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Unknown	LIQUID	Unknown	C
+E034	Blood_T_cell	#55A354	BLD.CD3.PPC	Primary_T_cells_from peripheral blood	CD3_Primary_Cells_Peripheral_UW	BLOOD	PrimaryCell	21Y_37Y	Male	LIQUID	Caucasian_Hispanic	C
+E035	HSC_B_cell	#678C69	BLD.CD34.PC	Primary_hematopoietic_stem_cells	CD34_Primary_Cells	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Unknown	LIQUID	Unknown	C
+E036	HSC_B_cell	#678C69	BLD.CD34.CC	Primary_hematopoietic_stem_cells_short_term_culture	CD34_Cultured_Cells	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Unknown	LIQUID	Unknown	C
+E037	Blood_T_cell	#55A354	BLD.CD4.MPC	Primary_T_helper_memory_cells_from_peripheral_blood_2	CD4_Memory_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E038	Blood_T_cell	#55A354	BLD.CD4.NPC	Primary_T_helper_naive_cells_from_peripheral_blood	CD4_Naive_Primary_Cells	BLOOD	PrimaryCell	Unknown	Mixed	LIQUID	Unknown	C
+E039	Blood_T_cell	#55A354	BLD.CD4.CD25M.CD45RA.NPC	Primary_T_helper_naive_cells_from peripheral blood	CD4Positive_CD25_CD45RAPositive_Naive_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E040	Blood_T_cell	#55A354	BLD.CD4.CD25M.CD45RO.MPC	Primary_T_helper_memory_cells_from_peripheral_blood_1	CD4Positive_CD25_CD45ROPositive_Memory_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E041	Blood_T_cell	#55A354	BLD.CD4.CD25M.IL17M.PL.TPC	Primary_T_helper_cells_PMA_I_stimulated	CD4Positive_CD25_IL17_PMA_Ionomycin_stimulated_MACS_purified_Th_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E042	Blood_T_cell	#55A354	BLD.CD4.CD25M.IL17P.PL.TPC	Primary_T_helper_17_cells_PMA_I_stimulated	CD4Positive_CD25_IL17Positive_PMA_Ionomcyin_stimulated_Th17_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E043	Blood_T_cell	#55A354	BLD.CD4.CD25M.TPC	Primary_T_helper_cells_from peripheral blood	CD4Positive_CD25_Th_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E044	Blood_T_cell	#55A354	BLD.CD4.CD25.CD127M.TREGPC	Primary_T_regulatory_cells_from peripheral blood	CD4Positive_CD25Positive_CD127_Treg_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E045	Blood_T_cell	#55A354	BLD.CD4.CD25I.CD127.TMEMPC	Primary_T_cells_effector_memory_enriched_from_peripheral_blood	CD4Positive_CD25int_CD127Positive_Tmem_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E046	HSC_B_cell	#678C69	BLD.CD56.PC	Primary_Natural_Killer_cells_from peripheral blood	CD56_Primary_Cells	BLOOD	PrimaryCell	21Y_37Y	Male	LIQUID	Caucasian_Hispanic	C
+E047	Blood_T_cell	#55A354	BLD.CD8.NPC	Primary_T_CD8Positive_naive_cells_from_peripheral_blood	CD8_Naive_Primary_Cells	BLOOD	PrimaryCell	Unknown	Mixed	LIQUID	Unknown	C
+E048	Blood_T_cell	#55A354	BLD.CD8.MPC	Primary_T_CD8Positive_memory_cells_from_peripheral_blood	CD8_Memory_Primary_Cells	BLOOD	PrimaryCell	Unknown	Unknown	LIQUID	Unknown	C
+E049	Mesench	#B65C73	STRM.CHON.MRW.DR.MSC	Mesenchymal_Stem_Cell_Derived_Chondrocyte_Cultured_Cells	Chondrocytes_from_Bone_Marrow_Derived_Mesenchymal_Stem_Cell_Cultured_Cells	STROMAL_CONNECTIVE	PrimaryCulture	Unknown	Unknown	SOLID	Unknown	C
+E050	HSC_B_cell	#678C69	BLD.MOB.CD34.PC.F	Primary_hematopoietic_stem_cells_G_CSF_mobilized_Female	Mobilized_CD34_Primary_Cells_Female	BLOOD	PrimaryCell	Fetus_(GW_unknown)	Mixed	LIQUID	Unknown	C
+E051	HSC_B_cell	#678C69	BLD.MOB.CD34.PC.M	Primary_hematopoietic_stem_cells_G_CSF_mobilized_Male	Mobilized_CD34_Primary_Cells_Male	BLOOD	PrimaryCell	42Y	Male	LIQUID	Caucasian	SD
+E052	Myosat	#E67326	MUS.SAT	Muscle_Satellite_Cultured_Cells	Muscle_Satellite_Cultured_Cells	MUSCLE	PrimaryCulture	Unknown	Unknown	SOLID	Unknown	C
+E053	Neurosph	#FFD924	BRN.CRTX.DR.NRSPHR	Cortex_derived_primary_cultured_neurospheres	Neurosphere_Cultured_Cells_Cortex_Derived	BRAIN	PrimaryCulture	17GW	Female	SOLID	Unknown	SD
+E054	Neurosph	#FFD924	BRN.GANGEM.DR.NRSPHR	Ganglion_Eminence_derived_primary_cultured_neurospheres	Neurosphere_Cultured_Cells_Ganglionic_Eminence_Derived	BRAIN	PrimaryCulture	17GW	Female	SOLID	Unknown	SD
+E055	Epithelial	#FF9D0C	SKIN.PEN.FRSK.FIB.01	Foreskin_Fibroblast_Primary_Cells_skin01	Penis_Foreskin_Fibroblast_Primary_Cells_skin01	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E056	Epithelial	#FF9D0C	SKIN.PEN.FRSK.FIB.02	Foreskin_Fibroblast_Primary_Cells_skin02	Penis_Foreskin_Fibroblast_Primary_Cells_skin02	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E057	Epithelial	#FF9D0C	SKIN.PEN.FRSK.KER.02	Foreskin_Keratinocyte_Primary_Cells_skin02	Penis_Foreskin_Keratinocyte_Primary_Cells_skin02	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E058	Epithelial	#FF9D0C	SKIN.PEN.FRSK.KER.03	Foreskin_Keratinocyte_Primary_Cells_skin03	Penis_Foreskin_Keratinocyte_Primary_Cells_skin03	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E059	Epithelial	#FF9D0C	SKIN.PEN.FRSK.MEL.01	Foreskin_Melanocyte_Primary_Cells_skin01	Penis_Foreskin_Melanocyte_Primary_Cells_skin01	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E061	Epithelial	#FF9D0C	SKIN.PEN.FRSK.MEL.03	Foreskin_Melanocyte_Primary_Cells_skin03	Penis_Foreskin_Melanocyte_Primary_Cells_skin03	SKIN	PrimaryCulture	0Y	Male	SOLID	Unknown	SD
+E062	Blood_T_cell	#55A354	BLD.PER.MONUC.PC	Primary_mononuclear_cells_from peripheral blood	Peripheral_Blood_Mononuclear_Primary_Cells	BLOOD	PrimaryCell	28Y_27Y	Male	LIQUID	Caucasian_Indian_Arabian	C
+E063	Adipose	#AF5B39	FAT.ADIP.NUC	Adipose_Nuclei	Adipose_Nuclei	FAT	PrimaryTissue	49Y_59Y_41Y_25Y_81Y	Female	SOLID	Unknown	C
+E065	Heart	#D56F80	VAS.AOR	Aorta	Aorta	VASCULAR	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E066	Other	#999999	LIV.ADLT	Liver	Adult_Liver	LIVER	PrimaryTissue	Unknown	Mixed	SOLID	Unknown	C
+E067	Brain	#C5912B	BRN.ANG.GYR	Brain_Angular_Gyrus	Brain_Angular_Gyrus	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E068	Brain	#C5912B	BRN.ANT.CAUD	Brain_Anterior_Caudate	Brain_Anterior_Caudate	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E069	Brain	#C5912B	BRN.CING.GYR	Brain_Cingulate_Gyrus	Brain_Cingulate_Gyrus	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E070	Brain	#C5912B	BRN.GRM.MTRX	Brain_Germinal_Matrix	Brain_Germinal_Matrix	BRAIN	PrimaryTissue	20GW	Male	SOLID	Unknown	SD
+E071	Brain	#C5912B	BRN.HIPP.MID	Brain_Hippocampus_Middle	Brain_Hippocampus_Middle	BRAIN	PrimaryTissue	81Y_73Y	Male	SOLID	Unknown	C
+E072	Brain	#C5912B	BRN.INF.TMP	Brain_Inferior_Temporal_Lobe	Brain_Inferior_Temporal_Lobe	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E073	Brain	#C5912B	BRN.DL.PRFRNTL.CRTX	Brain_Dorsolateral_Prefrontal_Cortex	Brain_Mid_Frontal_Lobe	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E074	Brain	#C5912B	BRN.SUB.NIG	Brain_Substantia_Nigra	Brain_Substantia_Nigra	BRAIN	PrimaryTissue	75Y_81Y	Mixed	SOLID	Unknown	C
+E075	Digestive	#C58DAA	GI.CLN.MUC	Colonic_Mucosa	Colonic_Mucosa	GI_COLON	PrimaryTissue	73Y	Female	SOLID	Caucasian	SD
+E076	Sm._Muscle	#F182BC	GI.CLN.SM.MUS	Colon_Smooth_Muscle	Colon_Smooth_Muscle	GI_COLON	PrimaryTissue	56Y_77Y	Female	SOLID	Caucasian	C
+E077	Digestive	#C58DAA	GI.DUO.MUC	Duodenum_Mucosa	Duodenum_Mucosa	GI_DUODENUM	PrimaryTissue	76Y	Male	SOLID	Caucasian	SD
+E078	Sm._Muscle	#F182BC	GI.DUO.SM.MUS	Duodenum_Smooth_Muscle	Duodenum_Smooth_Muscle	GI_DUODENUM	PrimaryTissue	59Y_73Y	Male	SOLID	Caucasian	C
+E079	Digestive	#C58DAA	GI.ESO	Esophagus	Esophagus	GI_ESOPHAGUS	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E080	Other	#999999	ADRL.GLND.FET	Fetal_Adrenal_Gland	Fetal_Adrenal_Gland	ADRENAL	PrimaryTissue	13GW	Male	SOLID	Unknown	SD
+E081	Brain	#C5912B	BRN.FET.M	Fetal_Brain_Male	Fetal_Brain_Male	BRAIN	PrimaryTissue	17GW_17GW	Male_Unknown	SOLID	Unknown	C
+E082	Brain	#C5912B	BRN.FET.F	Fetal_Brain_Female	Fetal_Brain_Female	BRAIN	PrimaryTissue	17GW._17GW	Female	SOLID	Unknown	C
+E083	Heart	#D56F80	HRT.FET	Fetal_Heart	Fetal_Heart	HEART	PrimaryTissue	14GW_15GW_13GW	Mixed	SOLID	Unknown	C
+E084	Digestive	#C58DAA	GI.L.INT.FET	Fetal_Intestine_Large	Fetal_Intestine_Large	GI_INTESTINE	PrimaryTissue	15GW	Male	SOLID	Unknown	SD
+E085	Digestive	#C58DAA	GI.S.INT.FET	Fetal_Intestine_Small	Fetal_Intestine_Small	GI_INTESTINE	PrimaryTissue	15GW	Male	SOLID	Unknown	SD
+E086	Other	#999999	KID.FET	Fetal_Kidney	Fetal_Kidney	KIDNEY	PrimaryTissue	17GW	Unknown	SOLID	Unknown	SD
+E087	Other	#999999	PANC.ISLT	Pancreatic_Islets	Pancreatic_Islets	PANCREAS	PrimaryTissue	Unknown_Unknown_45Y	Male	SOLID	Unknown_Unknown_Caucasian	C
+E088	Other	#999999	LNG.FET	Fetal_Lung	Fetal_Lung	LUNG	PrimaryTissue		Female_Unknown	SOLID		C
+E089	Muscle	#C2655D	MUS.TRNK.FET	Fetal_Muscle_Trunk	Fetal_Muscle_Trunk	MUSCLE	PrimaryTissue	16GW	Female	SOLID	Unknown	SD
+E090	Muscle	#C2655D	MUS.LEG.FET	Fetal_Muscle_Leg	Fetal_Muscle_Leg	MUSCLE_LEG	PrimaryTissue	15GW	Female	SOLID	Unknown	SD
+E091	Other	#999999	PLCNT.FET	Placenta	Fetal_Placenta	PLACENTA	PrimaryTissue	16GW	Female	SOLID	Unknown	SD
+E092	Digestive	#C58DAA	GI.STMC.FET	Fetal_Stomach	Fetal_Stomach	GI_STOMACH	PrimaryTissue		Female	SOLID		C
+E093	Thymus	#DAB92E	THYM.FET	Fetal_Thymus	Fetal_Thymus	THYMUS	PrimaryTissue	15GW	Female	SOLID	Unknown	SD
+E094	Digestive	#C58DAA	GI.STMC.GAST	Gastric	Gastric	GI_STOMACH	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E095	Heart	#D56F80	HRT.VENT.L	Left_Ventricle	Left_Ventricle	HEART	PrimaryTissue	3Y_34Y	Male	SOLID	Caucasian_African_American_Caucasian	C
+E096	Other	#999999	LNG	Lung	Lung	LUNG	PrimaryTissue	30Y	Female	SOLID	Caucasian	SD
+E097	Other	#999999	OVRY	Ovary	Ovary	OVARY	PrimaryTissue	30Y	Female	SOLID	Caucasian	SD
+E098	Other	#999999	PANC	Pancreas	Pancreas	PANCREAS	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E099	Other	#999999	PLCNT.AMN	Placenta_Amnion	Placenta_Amnion	PLACENTA	PrimaryTissue	16GW	Male	SOLID	African_American	SD
+E100	Muscle	#C2655D	MUS.PSOAS	Psoas_Muscle	Psoas_Muscle	MUSCLE	PrimaryTissue	3Y_34Y	Male	SOLID	Caucasian_African_American_Caucasian	C
+E101	Digestive	#C58DAA	GI.RECT.MUC.29	Rectal_Mucosa_Donor_29	Rectal_Mucosa.Donor_29	GI_RECTUM	PrimaryTissue	50Y	Female	SOLID	Caucasian	SD
+E102	Digestive	#C58DAA	GI.RECT.MUC.31	Rectal_Mucosa_Donor_31	Rectal_Mucosa.Donor_31	GI_RECTUM	PrimaryTissue	61Y	Female	SOLID	Caucasian	SD
+E103	Sm._Muscle	#F182BC	GI.RECT.SM.MUS	Rectal_Smooth_Muscle	Rectal_Smooth_Muscle	GI_RECTUM	PrimaryTissue	50Y	Female	SOLID	Caucasian	SD
+E104	Heart	#D56F80	HRT.ATR.R	Right_Atrium	Right_Atrium	HEART	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E105	Heart	#D56F80	HRT.VNT.R	Right_Ventricle	Right_Ventricle	HEART	PrimaryTissue	3Y_34Y	Male	SOLID	Caucasian_African_American_Caucasian	C
+E106	Digestive	#C58DAA	GI.CLN.SIG	Sigmoid_Colon	Sigmoid_Colon	GI_COLON	PrimaryTissue	3Y_34Y	Male	SOLID	Caucasian_African_American_Caucasian	C
+E107	Muscle	#C2655D	MUS.SKLT.M	Skeletal_Muscle_Male	Skeletal_Muscle_Male	MUSCLE	PrimaryTissue	54Y	Male	SOLID	Caucasian	SD
+E108	Muscle	#C2655D	MUS.SKLT.F	Skeletal_Muscle_Female	Skeletal_Muscle_Female	MUSCLE	PrimaryTissue	72Y	Female	SOLID	Caucasian	SD
+E109	Digestive	#C58DAA	GI.S.INT	Small_Intestine	Small_Intestine	GI_INTESTINE	PrimaryTissue	3Y_34Y	Male	SOLID	Caucasian_African_American_Caucasian	C
+E110	Digestive	#C58DAA	GI.STMC.MUC	Stomach_Mucosa	Stomach_Mucosa	GI_STOMACH	PrimaryTissue	59Y	Male	SOLID	Caucasian	SD
+E111	Sm._Muscle	#F182BC	GI.STMC.MUS	Stomach_Smooth_Muscle	Stomach_Smooth_Muscle	GI_STOMACH	PrimaryTissue	84Y	Female	SOLID	Caucasian	SD
+E112	Thymus	#DAB92E	THYM	Thymus	Thymus	THYMUS	PrimaryTissue	3Y	Male	SOLID	Caucasian_African_American	SD
+E113	Other	#999999	SPLN	Spleen	Spleen	SPLEEN	PrimaryTissue	34Y	Male	SOLID	Caucasian	SD
+E114	ENCODE2012	#000000	LNG.A549.ETOH002.CNCR	A549_EtOH_0.02pct_Lung_Carcinoma_Cell_Line	A549_EtOH_0.02pct_Lung_Carcinoma	LUNG	CellLine		Male			SD
+E115	ENCODE2012	#000000	BLD.DND41.CNCR	Dnd41_TCell_Leukemia_Cell_Line	Dnd41_TCell_Leukemia	BLOOD	CellLine		Male			SD
+E116	ENCODE2012	#000000	BLD.GM12878	GM12878_Lymphoblastoid_Cells	GM12878_Lymphoblastoid	BLOOD	PrimaryCulture		Female		Caucasian	SD
+E117	ENCODE2012	#000000	CRVX.HELAS3.CNCR	HeLa_S3_Cervical_Carcinoma_Cell_Line	HeLa_S3_Cervical_Carcinoma	CERVIX	CellLine		Female			SD
+E118	ENCODE2012	#000000	LIV.HEPG2.CNCR	HepG2_Hepatocellular_Carcinoma_Cell_Line	HepG2_Hepatocellular_Carcinoma	LIVER	CellLine		Male			SD
+E119	ENCODE2012	#000000	BRST.HMEC	HMEC_Mammary_Epithelial_Primary_Cells	HMEC_Mammary_Epithelial	BREAST	PrimaryCulture		Unknown			SD
+E120	ENCODE2012	#000000	MUS.HSMM	HSMM_Skeletal_Muscle_Myoblasts_Cells	HSMM_Skeletal_Muscle_Myoblasts	MUSCLE	PrimaryCulture		Unknown			SD
+E121	ENCODE2012	#000000	MUS.HSMMT	HSMM_cell_derived_Skeletal_Muscle_Myotubes_Cells	HSMMtube_Skeletal_Muscle_Myotubes_Derived_from_HSMM	MUSCLE	PrimaryCulture		Unknown			SD
+E122	ENCODE2012	#000000	VAS.HUVEC	HUVEC_Umbilical_Vein_Endothelial_Primary_Cells	HUVEC_Umbilical_Vein_Endothelial_Cells	VASCULAR	PrimaryCulture		Unknown			SD
+E123	ENCODE2012	#000000	BLD.K562.CNCR	K562_Leukemia_Cells	K562_Leukemia	BLOOD	PrimaryCulture		Female			SD
+E124	ENCODE2012	#000000	BLD.CD14.MONO	Monocytes_CD14Positive_RO01746_Primary_Cells	Monocytes_CD14Positive_RO01746	BLOOD	PrimaryCell		Female			SD
+E125	ENCODE2012	#000000	BRN.NHA	NH_A_Astrocytes_Primary_Cells	NH_A_Astrocytes	BRAIN	PrimaryCulture		Unknown			SD
+E126	ENCODE2012	#000000	SKIN.NHDFAD	NHDF_Ad_Adult_Dermal_Fibroblast_Primary_Cells	NHDF_Ad_Adult_Dermal_Fibroblasts	SKIN	PrimaryCulture		Female			SD
+E127	ENCODE2012	#000000	SKIN.NHEK	NHEK_Epidermal_Keratinocyte_Primary_Cells	NHEK_Epidermal_Keratinocytes	SKIN	PrimaryCulture		Unknown			SD
+E128	ENCODE2012	#000000	LNG.NHLF	NHLF_Lung_Fibroblast_Primary_Cells	NHLF_Lung_Fibroblasts	LUNG	PrimaryCulture		Unknown			SD
+E129	ENCODE2012	#000000	BONE.OSTEO	Osteoblast_Primary_Cells	Osteoblasts	BONE	PrimaryCulture		Unknown			SD
